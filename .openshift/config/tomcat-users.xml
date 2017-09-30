@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<tomcat-users>
+    <role rolename="manager-gui"/>
+	<role rolename="manager-status"/>
+	<role rolename="contentAdmin"/>
+	<role rolename="member"/>
+ 	<user username="tomcat" password="fa4936ddc20c7abddbac9caa988e1e706714ba56a202b506d43d632233531f68" roles="manager-gui,manager-status"/>
+	<user username="root" password="89510433f358afb3d8d20c4711688a1f978d4987234a25868efcc0c925173b2d" roles="contentAdmin" />
+	<user username="bruch" password="dea6a0028c814c68d8e54eeeedee828470dbdbf1b80f1877a0655c0bf1288dd8" roles="contentAdmin,member" />
+	<user username="ibuergy" password="4c1af9f6d31dc00e06197b13613783af65d011cc350d7a452672f9a90ca04e79" roles="contentAdmin,member" />
+	<user username="aschafer" password="84d247d21ac35c4e0c101e55a6ab50d099524cc80308d919d9d71c68ce0a51e1" roles="contentAdmin,member" />
+	<user username="hbaumgartner" password="26dfc512bd79c428682d89ee0b44aca08d549c7d26b3abab26bb14abb7815ca4" roles="member" />
+	<user username="hgeissler" password="5500a81526877b75193f305000cd20d0849afe7aa355493f3b965e7d26f535cf" roles="member" />
+	<user username="hriedo" password="43e0ca6453ca38d7e42c6e55763d33188a94ddbd8781182bf9deaf3437e9c1e9" roles="member" />
+	<user username="lmueller" password="0abaf56cf5e6ef30579b5b98f236d93bc011fe3e304ba0d0982e85e5a967bb8f" roles="member" />
+	<user username="btschopp" password="3872ac962a3083908ba860d5b5ca50a30b2bb529ba441b41d04ec1e82bdf2921" roles="member" />
+	<user username="fsoum" password="2be835d94eb2adb857b0867512eb82a748d2caf5c47f085751c0fe2497655ac4" roles="member" />
+	<user username="rzufferey" password="edd7940adade5f8a176dbe8419c9929d8fe5cba67b364e39c82d4f283212893a" roles="member" />
+	<user username="gmeneghetti" password="bb39ff2bfc9281739fa63f78d512a5fa9cd85b8e8a4496c8d234dd6aaa726f2d" roles="member" />
+	<user username="aschneuwly" password="466c0aac788cc64e7c57e7584fe68bffa5b90d06da7f0b864394cdff19b41eea" roles="member" />
+	<user username="cwyss" password="1de774a3861d6346f52882bd38fd880f3af8b04fb25a94033e57256ac4b903d9" roles="member" />
+	<user username="vtremp" password="9835920f559ac303ef51d970110b84d1022b36760c9e82072d0a24e686ac819a" roles="member" />
+	<user username="mmesser" password="08c80f3d218e067f82ba27284cdb32b2edaa9408f9c8e8963e1c27d12d10675a" roles="member" />
+	<user username="vwaterkamp" password="6e1b456e822fecfa25d0a37b957ed8d5c9db1922c16bd5e9ef324a260a73adf2" roles="member" />
+	
+	
+<!--
+  NOTE:  By default, no user is included in the "manager-gui" role required
+  to operate the "/manager/html" web application.  If you wish to use this app,
+  you must define such a user - the username and password are arbitrary.
+-->
+<!--
+  NOTE:  The sample user and role entries below are wrapped in a comment
+  and thus are ignored when reading this file. Do not forget to remove
+  <!.. ..> that surrounds them.
+-->
+<!--
+If you wish to use the Manager Application to deploy and undeploy applications in a running Tomcat installation, you MUST add the "manager-gui" role to at least one username in your selected Realm implementation. This is because the manager web application itself uses a security constraint that requires role "manager-gui" to access ANY request URI within the HTML interface of that application.
+
+For security reasons, no username in the default Realm (i.e. using conf/tomcat-users.xml is assigned the "manager-gui" role. Therefore, no one will be able to utilize the features of this application until the Tomcat administrator specifically assigns this role to one or more users.
+-->
+
+<!--
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <user username="tomcat" password="tomcat" roles="tomcat"/>
+  <user username="both" password="tomcat" roles="tomcat,role1"/>
+  <user username="role1" password="tomcat" roles="role1"/>
+-->
+</tomcat-users>
